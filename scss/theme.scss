@@ -170,7 +170,51 @@ $text-color-light: #959DCB;
   .tabbed-pane-content.has-no-tabs{background-color:lighten($main-color, 5%) !important;}
   .tabbed-pane-header-tab{color: $text-color-light;}
   .tabbed-pane-header{border-bottom-color:#3B4950 !important;}
-  [is="ui-icon"].icon-mask{background-color: $text-color-light;}
+  [is="ui-icon"].icon-mask{
+    background-color: $text-color-light;
+  }
+  .styles-section > div {padding: 15px;}
+  .hbox {background: $main-color;}
+  .elements-disclosure li {
+    min-height: 23px;
+    line-height: 23px;
+  }
+  .widget.vbox.tabbed-pane-shadow[tabindex="-1"] {
+    .tabbed-pane-header {
+      flex: 0 0 35px;
+
+      [is="ui-icon"].icon-mask {
+        margin-top: 7px;
+      }
+    }
+
+    .tabbed-pane-header-tab, .tabbed-pane-header-tab.selected {
+      height: 34px;
+    }
+
+    .toolbar-item {
+      height: 42px;
+    }
+  }
+
+  .tree-outline {
+    padding: 4px 0;
+  }
+
+  .tree-outline > li {
+    min-height: 18px;
+    line-height: 18px;
+  }
+
+  .enabled-button {
+    top: 3px;
+  }
+
+  .toolbar-divider {
+    height: 38px;
+    margin: 30px 4px 0;
+    background-color: transparent;
+  }
 }
 
 @import "console";
