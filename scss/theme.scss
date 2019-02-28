@@ -12,6 +12,7 @@ $string-color: #C3E88D;
 $number-color: #F78C6C;
 $link-color: #AAAAAA;
 $text-color: #C3CEE3;
+$text-color-light: #959DCB;
 
 :host-context(.-theme-with-dark-background), .-theme-with-dark-background {
   ol li.selected:focus .webkit-html-tag,
@@ -167,8 +168,9 @@ $text-color: #C3CEE3;
   /* Tabbed Pane
    ========================================================================== */
   .tabbed-pane-content.has-no-tabs{background-color:lighten($main-color, 5%) !important;}
+  .tabbed-pane-header-tab{color: $text-color-light;}
   .tabbed-pane-header{border-bottom-color:#3B4950 !important;}
-
+  [is="ui-icon"].icon-mask{background-color: $text-color-light;}
 }
 
 @import "console";
