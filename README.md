@@ -1,13 +1,12 @@
-# DevTools Material Theme
+# DevTools Material Palenight Theme
 
 This is a Chrome extension that applies a different colour theme to the Chrome developer tools.
 
-![Theme Screenshot](https://github.com/jaysuz/material-dev-tools/raw/master/theme.png "Material Theme")
+Based on [Material DevTools by jaysuz](https://github.com/jaysuz/material-dev-tools).
+
+![Theme Screenshot](https://github.com/voidgraphics/material-dev-tools/raw/master/theme.png "Material Theme")
 
 ## Getting Started
-
-The extension can be downloaded via the Google Chrome web store: 
-[DevTools Material Theme](https://chrome.google.com/webstore/detail/material-devtools-theme/pmlofkkoaahmkmmebdkkcljmflocijlo)
 
 If you want to make your own adjustments, you can also clone this repository and sideload the extension, adhering to the installation guidelines below.
 Either way, make sure that the following prerequisites are met before you perform the installation.
