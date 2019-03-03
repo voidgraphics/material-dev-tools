@@ -1,9 +1,9 @@
 {
-  "name": "Material DevTools Theme",
+  "name": "Material Palenight DevTools Theme",
   "version": "1.0",
-  "description": "A developer tools color theme inspired by the Material Theme UI plugin for IntelliJ IDEA.",
+  "description": "A developer tools color theme inspired by the Material Palenight Theme",
   "manifest_version": 2,
-  "author": "Jonas Augsburger",
+  "author": "Adrien Leloup",
   "devtools_page": "devtools.html",
   "browser_action": {
     "default_icon": "icon.png",

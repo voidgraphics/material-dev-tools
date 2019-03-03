@@ -1,15 +1,25 @@
 {
-  "name": "material-dev-tools",
+  "name": "material-palenight-dev-tools",
   "version": "0.1.0",
-  "description": "Material Theme for Chrome Devtools",
+  "description": "Material Palenight Theme for Chrome Devtools",
   "main": "devtools.html",
-  "author": "Jonas Augsburger <jonas.augsburger@gmail.com>",
+  "author": "Adrien Leloup <adrien@whitecube.be>",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "laravel-mix": "^4.0.14"
+  },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.10.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2"
+    "resolve-url-loader": "2.3.1",
+    "sass": "^1.17.2",
+    "sass-loader": "7.*"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   }
 }

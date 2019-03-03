@@ -2,6 +2,7 @@
    Dark Theme
    ========================================================================== */
 $main-color: #292D3E;
+$main-color-lighter: #2c3144;
 $main-color-dark: #222634;
 $main-color-secondary: #292D3E;
 $accent-color: #80CBCF;
@@ -17,6 +18,8 @@ $text-color-light: #959DCB;
 $lightblue: #b2ccd6;
 $blue: #82AAFF;
 $red: #F07178;
+$yellow: #FFCB6B;
+$purple: #C792EA;
 
 :host-context(.-theme-with-dark-background), .-theme-with-dark-background {
   ol li.selected:focus .webkit-html-tag,
@@ -59,20 +62,21 @@ $red: #F07178;
 .-theme-with-dark-background {
   --divider-color: #{$main-color-dark} !important;
   --accent-color: #80CBCF !important;
-  --accent-color-b: rgba(128,203,207, 0.5) !important;
+  --accent-color-b: #{$purple} !important;
   --accent-color-c: rgba(128,203,207, 0.5) !important;
   --toolbar-bg-color: #292D3E !important;
   --toolbar-hover-bg-color: transparent !important;
-  --selection-fg-color: #cdcdcd !important;
+  --selection-fg-color: white !important;
   --selection-bg-color: #{$main-color-dark} !important;
   --selection-inactive-bg-color: #{$main-color-dark} !important;
   --tab-selected-fg-color: #eaeaea !important;
   --tab-selected-bg-color: #{$main-color-dark} !important;
-  --drop-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2),
+  --drop-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1),
   0 2px 4px 2px rgba(0, 0, 0, 0.2),
   0 2px 6px 2px rgba(0, 0, 0, 0.1) !important;
   --focus-ring-active-shadow: 0 0 0 1px rgba(172 ,228, 255, 0.6) !important;
   --focus-ring-inactive-shadow: 0 0 0 1px #5a5a5a !important;
+  --warning-border-color: transparent !important;
 }
 
 .-theme-with-dark-background {
@@ -298,6 +302,71 @@ $red: #F07178;
   .styles-section.keyframe-key {
     color: $red !important;
   }
+
+  .counter-item {
+    margin-top: 7px;
+  }
+
+  .soft-context-menu {
+    background-color: $main-color-dark;
+    border-color: red;
+  }
+
+  .soft-context-menu-shortcut {
+    color: $text-color-light;
+  }
+
+  .tree-outline li.odd-row {
+    background-color: $main-color-lighter !important;
+  }
+
+  .elements-disclosure li.parent::before {
+    background-color: $text-color-light !important;
+  }  
+
+  .sidebar-pane-section-toolbar {
+    display: none;
+  }
+
+  .styles-sidebar-pane-toolbar {
+    border-bottom-color: var(--divider-color);
+  }
+}
+
+.-theme-with-dark-background .console-view{
+  --warning-border-color: transparent !important;
+  --error-border-color: transparent !important;
+}
+
+.-theme-with-dark-background .console-warning-level,
+.-theme-with-dark-background .console-error-level {
+  background: transparent !important;
+}
+
+.console-warning-level .console-message-text {
+  color: $yellow !important;
+}
+
+.console-error-level .console-message-text, .console-error-level .console-view-object-properties-section {
+  color: $red !important;
+}
+
+.console-message .source-code {
+  line-height: 1.7 !important;
+}
+
+.message-level-icon, .command-result-icon {
+  top: 6px !important;
+}
+
+#console-messages .link, #console-messages .devtools-link {
+  color: $blue !important;
+  text-decoration: none;
+  transition: color 200ms ease-out;
+}
+
+#console-messages .link:hover, #console-messages .devtools-link:hover {
+  color: white !important;
 }
 
 #elements-crumbs {

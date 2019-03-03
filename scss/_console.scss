@@ -16,5 +16,74 @@
   .object-value-number, .object-value-number.source-code{color:lighten($number-color, 5%) !important;}
   .object-value-string, .object-value-string.source-code, .object-value-string-quote{color:lighten($string-color, 5%) !important;}
   .name.source-code{color: lighten(#EEFFE3, 5%) !important;}
-  #console-prompt .console-prompt-icon {filter: hue-rotate(-40deg) !important;}
+  #console-prompt .console-prompt-icon {filter: hue-rotate(-320deg) brightness(130%) contrast(80%) !important;}
+}
+
+.toolbar-input {
+  background: transparent !important;
+}
+
+.console-main-toolbar {
+  height: 32px !important;
+}
+
+[aria-label="Show console sidebar"] .spritesheet-largeicons.icon-mask, 
+[aria-label="Clear console"] .spritesheet-largeicons.icon-mask,
+[aria-label="Create live expression"] .spritesheet-largeicons.icon-mask,
+[aria-label="Console settings"] .spritesheet-largeicons.icon-mask {
+  margin-top: 3px !important;
+}
+
+.toolbar-shadow .toolbar-has-dropdown {
+  margin-top: 3px !important;
+} 
+
+.toolbar-shadow .toolbar-input {
+  margin-top: 3px !important;
+}
+
+.message-level-icon, .command-result-icon {
+  top: 4px !important;
+}
+
+.console-user-command-result .command-result-icon {
+  top: 0 !important;
+  bottom: 0;
+  margin: auto;
+}
+
+.console-message-wrapper {
+  padding: 2px 0 !important;
+}
+
+div.error {
+  background-color: $red;
+  color: white;
+}
+
+.console-message-repeat-count {
+  margin-top: 4px !important;
+}
+
+.object-properties-section li {
+  padding: 5px 6px !important;
+  margin-left: -6px !important;
+}
+
+.object-properties-section li .name {
+  color: $blue !important;
+}
+
+.tree-outline li::before {
+  background-color: $text-color-light !important;
+  margin-right: 3px !important;
+}
+
+.tree-outline li:not(.parent)::before {
+  background-color: transparent !important;
+}
+
+.object-description,
+:host-context(.-theme-with-dark-background) .object-properties-section .object-description {
+  color: $yellow !important;
 }
